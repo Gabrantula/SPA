@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+#details-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: rgb(250, 238, 224);
+    height: 400px;
+    height: 85vh;
+    width: 100vw;
+}
+#details-page #details-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    box-shadow: 7px 7px 7px 7px rgb(107, 81, 13);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: bisque;
+}
+#details-page #details-wrapper img {
+    width: 50%;
+    height: 400px;
+}
+#details-page #details-wrapper #info-wrapper {
+    text-align: center;
+    border-left: 2px solid darkgoldenrod;
+}
+#details-page #details-wrapper #info-wrapper h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+    color: rgb(86, 146, 86);
+    letter-spacing: 2px;
+}
+#details-page #details-wrapper #info-wrapper p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 30px;
+    color: rgb(107, 81, 13);
+    margin-bottom: 10%;
+}
+#details-page #details-wrapper #info-wrapper .action {
+    margin-left: 50px;
+   padding: 10px 35px 10px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(91, 134, 214);
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 3px 3px rgb(107, 81, 13);
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#details-page #details-wrapper #info-wrapper .action:hover {
+    box-shadow: none;
+    border: 1px solid rgb(107, 81, 13);
+}
