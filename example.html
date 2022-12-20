@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-1</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/src/app.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="/">
+            <img src="/pictures/home-pic.png" alt="home-pic"></a>
+        <nav>
+            <div>
+                <a href="/all-cards">Catalog</a>
+            </div>
+            <div id="user">
+                <span>Welcome {user}</span>
+                <a href="/create">Add Card</a>
+                <a href="/my-cards">My Cards</a>
+                <a id="logoutBtn" href="javascript:void(0)">Logout</a>
+            </div>
+            <div id="guest">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <main id="main-container">
+            
+        </main>
+        <section id="home-page">
+            <div>
+                <img src="/pictures/home-avatar.png" alt="home-avatar">
+            </div>
+
+            <h1>Welcome to our site for funny animals!</h1>
+            <h3>Create funny cards and enjoy width us!</h3>
+            <div>
+                <button class="dashboard">See All Cards</button>
+            </div>
+        </section>
+        <section id="login-page">
+            <div class="form">
+                <h2>Login</h2>
+                <form class="form-login">
+                    <p>Email</p>
+                    <input type="text" name="email" placeholder="email">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="password">
+                    <div>
+                        <button type="submit">login</button>
+                    </div>
+                    <p class="message">Not registered? <a href="/register">Create an account</a></p>
+                </form>
+            </div>
+        </section>
+        <section id="register-page">
+            <div class="form">
+                <h2>Register</h2>
+                <form class="form-register">
+                    <p>Username</p>
+                    <input type="text" name="username" placeholder="username">
+                    <p>Email</p>
+                    <input type="text" name="email" placeholder="email">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="password">
+                    <p>Repeat Password</p>
+                    <input type="password" name="rePass" placeholder="repeat password">
+                    <div>
+                        <button type="submit">register</button>
+                    </div>
+                    <p>Already have an account?<a href="/login">Sign in</a>.</p>
+                </form>
+            </div>
+        </section>
+        <section id="create-page">
+            <div class="form">
+                <form class="create-form">
+                    <h2>Create funny card</h2>
+                    <p>Animal image</p>
+                    <input type="text" name="imageUrl" placeholder="Enter animal image">
+                    <p>Title</p>
+                    <input type="text" name="title" placeholder="Enter Title">
+                    <p>Description</p>
+                    <textarea name="description" placeholder="Enter Description"></textarea>
+                    <div>
+                        <button type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+        <section id="edit-page">
+            <div class="form">
+                <form class="edit-form">
+                    <h2>Edit your card</h2>
+                    <p>Animal image</p>
+                    <input type="text" name="imageUrl" placeholder="Animal image">
+                    <p>Title</p>
+                    <input type="text" name="title" placeholder="Title">
+                    <p>Description</p>
+                    <textarea name="description" placeholder="Description"></textarea>
+                    <div>
+                        <button type="submit">Edit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="catalog-page">
+            <h1>All funny cards</h1>
+            <div class="card-container">
+            <div class="card">
+                <div class="img">
+                    <img src="/pictures/monkey-1.png" alt="monkey-1">
+                </div>
+                <div class="info">
+                    <p>Monkey on the mirrow</p>
+                    <a class="btn" href="/details">Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="/pictures/pierre-bamin.png" alt="pierre-bamin">
+                </div>
+                <div class="info">
+                    <p>You don't see me</p>
+                    <a class="btn" href="/details">Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="/pictures/monkey-2.png" alt="monkey-2">
+                </div>
+                <div class="info">
+                    <p>Are you kidding me?</p>
+                    <a class="btn" href="/details">Details</a>
+                </div>
+            </div>
+        </div>
+<h1>No funny cards in database.</h1>
+        </section>
+        <section id="my-page">
+            <p>My cards count: </p>
+            <div class="all-my-cards">
+            <div class="card">
+                <div class="img">
+                    <img src="/pictures/monkey-2.png" alt="monkey-2">
+                </div>
+                <div class="info">
+                    <p>Are you kidding me?</p>
+                    <a class="btn" href="/details">Details</a>
+                </div>
+            </div>
+        </div>
+            <h2>No cards in database.</h2>
+        </section>
+        <section id="details-page">
+            <div id="details-wrapper">
+                <img src="/pictures/monkey-2.png" alt="monkey-2">
+
+                <div id="info-wrapper">
+                    <h2>Are you kidding me?</h2>
+                    <p>There are two main types of monkeys: New World monkeys live in the Americas (North America,
+                        Central America, and South America). Old World monkeys live in Asia and Africa. One difference
+                        between the two types is that Old World monkeys don’t have prehensile (gripping) tails; New
+                        World monkeys do.</p>
+
+                    <a class="action" href="/edit">Edit</a>
+                    <a class="action" href="javascript:void(0)">Delete</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p><span>Created by</span> <a href="/Gaby-page">Gabrantula Tsvetkova</a> </p>
+        </footer>
+    </body>
+    <aside>
+
+    </aside>
+
+</html>
