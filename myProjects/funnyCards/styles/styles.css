@@ -1,0 +1,18 @@
+@import './navigation.css';
+@import './responsive.css';
+@import './login-register-create-add.css';
+@import './all-items.css';
+@import './details.css';
+@import './footer.css';
+@import './home-page.css';
+@import './user-profile.css';
+@import './gaby-page.css';
+
+html {
+    position: relative;
+}
+body {
+    background-color: rgb(250, 238, 224);
+    margin: 0px;
+    
+}
